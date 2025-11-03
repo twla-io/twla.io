@@ -1,49 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Twla — Learn to Think Functionally</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Satoshi:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="logo">>>twλa</div>
-  </header>
-
-  <main class="main">
-    <section class="hero">
-      <h1>Learn to think functionally.</h1>
-      <p class="subtitle">Haskell as your first language.</p>
-      <a href="mailto:hello@twla.io" class="btn">Start Learning</a>
-    </section>
-
-    <section class="why">
-      <h2>We teach clarity, not syntax.</h2>
-      <p>
-        Twla helps new programmers learn reasoning before syntax.  
-        Haskell becomes their first language — not just for computers, but for thought.
-      </p>
-      <pre><code>f >> g >> h = clarity</code></pre>
-    </section>
-
-    <section class="course">
-      <h2>Haskell as a First Language</h2>
-      <p class="subtitle">Four weeks. One paradigm.</p>
-      <ul>
-        <li>Thinking Functionally</li>
-        <li>Modeling with Types</li>
-        <li>Compositional Power</li>
-        <li>Building with Purity</li>
-      </ul>
-      <a href="mailto:hello@twla.io" class="btn-outline">Join the Next Cohort</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>—</p>
-    <p>Twla · hello@twla.io · twla.io</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>>>&#x0074;&#x0077;&#x03BB;&#x0061; — Twla</title>
+    <meta name="description" content=">>twλa — minimal placeholder" />
+    <style>
+      :root {
+        --paper: #FAFAFA;
+        --ink: #1A1A1A;
+        --muted: #2E2E2E;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+      .wrap {
+        min-height: 100%;
+        display: grid;
+        place-items: center;
+        padding: 4rem 1.25rem;
+      }
+      h1 {
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        margin: 0 0 1rem;
+        line-height: 1.1;
+        font-size: clamp(2.2rem, 6vw, 5rem);
+        user-select: text;
+      }
+      .email {
+        font-weight: 500;
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(26,26,26,.15);
+        padding-bottom: 2px;
+      }
+      .email:focus,
+      .email:hover { border-bottom-color: var(--ink); }
+      footer { position: fixed; inset-inline: 0; bottom: 0; padding: .75rem 1rem; color: #777; font-size: .85rem; text-align: center; }
+      @media (prefers-color-scheme: dark) {
+        :root { --paper: #0f0f10; --ink: #ECECEC; --muted: #B8B8B8; }
+        .email { border-bottom-color: rgba(236,236,236,.25); }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap" aria-label="Twla minimal homepage">
+      <div>
+        <h1 aria-label=">>twλa">&gt;&gt;twλa</h1>
+        <p><a class="email" href="mailto:hello@twla.io">hello@twla.io</a></p>
+      </div>
+    </main>
+    <footer>
+      © <span id="y"></span> Twla
+    </footer>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
