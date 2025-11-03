@@ -4,53 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>>>&#x0074;&#x0077;&#x03BB;&#x0061;</title>
-    <meta name="description" content=">>twλa — minimal placeholder" />
     <style>
-      :root {
-        --paper: #FAFAFA;
-        --teal: #00A6A6;
-        --violet: #5A4FFF;
-      }
-      html, body {
-        height: 100%;
-        margin: 0;
-        background: var(--paper);
-        display: grid;
-        place-items: center;
-        font-family: Inter, sans-serif;
-      }
-      main {
-        text-align: center;
-      }
-      img {
-        width: clamp(200px, 40vw, 480px);
-        height: auto;
-        user-select: none;
-      }
-      a.email {
-        display: inline-block;
-        margin-top: 1.5rem;
-        color: var(--teal);
-        text-decoration: none;
-        font-weight: 500;
-        border-bottom: 1px solid rgba(0,0,0,.2);
-        padding-bottom: 2px;
-        transition: color .25s ease, border-color .25s ease;
-      }
-      a.email:hover {
-        color: var(--violet);
-        border-bottom-color: var(--violet);
-      }
-      @media (prefers-color-scheme: dark) {
-        :root { --paper: #0f0f10; }
-        a.email { border-bottom-color: rgba(255,255,255,.3); }
-      }
+      html, body { height: 100%; margin: 0; background: #FAFAFA; }
+      body { display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Inter, Roboto, Helvetica, Arial, sans-serif; }
+      main { text-align: center; }
+      img { width: clamp(180px, 42vw, 520px); height: auto; display: block; margin: 0 auto 16px; }
+      a { color: #1A1A1A; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.25); padding-bottom: 2px; }
+      a:hover { border-bottom-color: #1A1A1A; }
+      @media (prefers-color-scheme: dark) { html, body { background: #0f0f10; } a { color: #ECECEC; border-bottom-color: rgba(236,236,236,.25);} a:hover{border-bottom-color:#ECECEC;} }
     </style>
   </head>
   <body>
     <main>
+      <!-- Save the black logo image as `logo.png` in the same folder as this file -->
       <img src="logo.png" alt=">>twλa logo" />
-      <a class="email" href="mailto:hello@twla.io">hello@twla.io</a>
+      <a href="mailto:hello@twla.io">hello@twla.io</a>
     </main>
   </body>
 </html>
