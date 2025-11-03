@@ -1,0 +1,107 @@
+:root {
+  --black: #1A1A1A;
+  --paper: #FAFAFA;
+  --graphite: #2E2E2E;
+  --violet: #5A4FFF;
+  --teal: #00A6A6;
+  --font-display: "Satoshi", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--paper);
+  color: var(--black);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.header {
+  padding: 2rem 0;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.02em;
+}
+
+.hero {
+  margin: 8vh auto;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--graphite);
+  margin-bottom: 2rem;
+}
+
+.btn, .btn-outline {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn {
+  background-color: var(--violet);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--teal);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--graphite);
+  color: var(--graphite);
+  margin-top: 1.2rem;
+}
+
+.btn-outline:hover {
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
+section {
+  margin: 8vh auto;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.why code {
+  font-family: "JetBrains Mono", monospace;
+  background: #f3f3f3;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0 2rem 0;
+}
+
+ul li {
+  margin: 0.4rem 0;
+}
+
+.footer {
+  background-color: var(--black);
+  color: var(--paper);
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
